@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontrão Juventude Santa</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section id="inicio">
+    <div class="container">
+      <h1>Encontrão Juventude Santa</h1>
+      <p class="subtitulo">Uma tarde de louvor, partilha e amizade para renovar o espírito. Junte-se a nós!</p>
+
+      <div class="countdown-title">Faltam para o nosso encontrão</div>
+      <div id="countdown-timer"></div>
+
+      <a href="#inscricao" class="cta-button">QUERO ME INSCREVER AGORA!</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <main>
+    <section id="sobre">
+      <div class="container">
+        <h2>Uma Experiência para Guardar no Coração</h2>
+        <p>Prepare-se para um dia inesquecível! Nosso encontrão é um momento para se reconectar com Deus, fazer novas amizades e fortalecer nossa comunidade.</p>
+      </div>
+    </section>
+
+    <!-- INSPIRAÇÃO -->
+    <section id="inspiracao">
+      <div class="container">
+        <h2>A Santidade de Tênis e Calça Jeans</h2>
+        <div class="content">
+          <img src="são carlo acutis.jpg" alt="São Carlo Acutis sorrindo">
+          <div>
+            <p>Nosso encontro é inspirado no São Carlo Acutis, um jovem como nós que mostrou que o céu é uma meta possível para todos. Apaixonado pela Eucaristia e pela tecnologia, ele usou a internet para evangelizar e nos deixou um recado claro: a santidade não é para poucos, é para agora!</p>
+            <blockquote>"A Eucaristia é a minha autoestrada para o Céu."</blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETALHES -->
+    <section id="detalhes">
+      <div class="container">
+        <h2>Save the Date!</h2>
+        <p><strong>Quando?</strong> 05 de Outubro de 2025</p>
+        <p><strong>Que horas?</strong> Das 13:00h às 20:00h</p>
+        <p><strong>Onde?</strong> Capela de São José - Cardinot</p>
+      </div>
+    </section>
+
+    <!-- INSCRIÇÃO -->
+    <section id="inscricao">
+      <div class="container">
+        <h2>Faça sua Inscrição!</h2>
+        <p>Preencha seus dados abaixo para garantir sua vaga. É rapidinho!</p>
+
+        <form action="#" method="POST" class="form-grid">
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+          </div>
+          <div class="form-group">
+            <label for="capela">Capela que participa (Caso participe):</label>
+            <input type="text" id="capela" name="capela">
+          </div>
+
+          <div class="form-group">
+            <label>Você é católico?</label>
+            <div class="radio-group">
+              <input type="radio" id="catolico_sim" name="catolico" value="sim">
+              <label for="catolico_sim">Sim, e quero me aprofundar na fé!</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="catolico_nao" name="catolico" value="nao">
+              <label for="catolico_nao">Não, mas estou aberto a conhecer.</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Poderá ficar durante todo o evento (13h-20h)?</label>
+            <div class="radio-group">
+              <input type="radio" id="dia_todo_sim" name="dia_todo" value="sim">
+              <label for="dia_todo_sim">Sim</label>
+              <input type="radio" id="dia_todo_nao" name="dia_todo" value="nao">
+              <label for="dia_todo_nao">Não</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Como você virá para o encontrão?</label>
+            <div class="radio-group">
+              <input type="radio" id="transporte_sim" name="transporte" value="proprio">
+              <label for="transporte_sim">Tenho transporte próprio</label>
+              <input type="radio" id="transporte_nao" name="transporte" value="carona">
+              <label for="transporte_nao">Preciso de ajuda com carona</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="responsavel">Nome de um responsável:</label>
+            <input type="text" id="responsavel" name="responsavel" required>
+          </div>
+          <div class="form-group">
+            <label for="tel_responsavel">Telefone do responsável:</label>
+            <input type="tel" id="tel_responsavel" name="tel_responsavel" required>
+          </div>
+
+          <button type="submit" class="cta-button">CONFIRMAR MINHA PRESENÇA</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Juventude Santa. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS externo -->
+  <script src="js/script.js"></script>
+</body>
+</html>
