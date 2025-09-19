@@ -1,136 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encontrão Juventude Santa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encontrão Juventude Santa 2025</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <section id="inicio">
-    <div class="container">
-      <h1>Encontrão Juventude Santa</h1>
-      <p class="subtitulo">Uma tarde de louvor, partilha e amizade para renovar o espírito. Junte-se a nós!</p>
-
-      <div class="countdown-title">Faltam para o nosso encontrão</div>
-      <div id="countdown-timer"></div>
-
-      <a href="#inscricao" class="cta-button">QUERO ME INSCREVER AGORA!</a>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <main>
-    <section id="sobre">
-      <div class="container">
-        <h2>Uma Experiência para Guardar no Coração</h2>
-        <p>Prepare-se para um dia inesquecível! Nosso encontrão é um momento para se reconectar com Deus, fazer novas amizades e fortalecer nossa comunidade.</p>
-      </div>
-    </section>
-
-    <!-- INSPIRAÇÃO -->
-    <section id="inspiracao">
-      <div class="container">
-        <h2>A Santidade de Tênis e Calça Jeans</h2>
-        <div class="content">
-          <img src="são carlo acutis.jpg" alt="São Carlo Acutis sorrindo">
-          <div>
-            <p>Nosso encontro é inspirado no São Carlo Acutis, um jovem como nós que mostrou que o céu é uma meta possível para todos. Apaixonado pela Eucaristia e pela tecnologia, ele usou a internet para evangelizar e nos deixou um recado claro: a santidade não é para poucos, é para agora!</p>
-            <blockquote>"A Eucaristia é a minha autoestrada para o Céu."</blockquote>
-          </div>
+    <header id="site-header">
+        <div class="header-inner container">
+            <a href="#inicio" class="logo-link">
+                <img src="img/logo.png" alt="Juventude Santa - Logo" class="logo-img">
+            </a>
+            <nav class="main-nav">
+                <a href="#inicio">Início</a>
+                <a href="#paroquia">Sobre</a>
+                <a href="#localizacao">Local</a>
+                <a href="#inscricao">Inscrição</a>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <!-- DETALHES -->
-    <section id="detalhes">
-      <div class="container">
-        <h2>Save the Date!</h2>
-        <p><strong>Quando?</strong> 05 de Outubro de 2025</p>
-        <p><strong>Que horas?</strong> Das 13:00h às 20:00h</p>
-        <p><strong>Onde?</strong> Capela de São José - Cardinot</p>
-      </div>
-    </section>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-left">
+                    <h1 class="main-title">Encontrão Juventude Santa</h1>
+                    <p class="subtitulo">Uma tarde de louvor, partilha e amizade para renovar o espírito. Junte-se a nós!</p>
+                    <div id="countdown-timer" class="countdown-timer"></div>
+                    <a href="#inscricao" class="cta-button">QUERO ME INSCREVER</a>
+                </div>
 
-    <!-- INSCRIÇÃO -->
-    <section id="inscricao">
-      <div class="container">
-        <h2>Faça sua Inscrição!</h2>
-        <p>Preencha seus dados abaixo para garantir sua vaga. É rapidinho!</p>
-
-        <form action="#" method="POST" class="form-grid">
-          <div class="form-group">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-          </div>
-          <div class="form-group">
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade" required>
-          </div>
-          <div class="form-group">
-            <label for="capela">Capela que participa (Caso participe):</label>
-            <input type="text" id="capela" name="capela">
-          </div>
-
-          <div class="form-group">
-            <label>Você é católico?</label>
-            <div class="radio-group">
-              <input type="radio" id="catolico_sim" name="catolico" value="sim">
-              <label for="catolico_sim">Sim, e quero me aprofundar na fé!</label>
+                <div class="hero-right">
+                    <div class="quote-card glassmorphism">
+                        <p class="card-title">Inspirações</p>
+                        <div class="quote-content-dynamic">
+                            <img src="img/sao-carlo.png" alt="Imagem do Santo" id="saint-image" class="saint-image">
+                            <div class="typed-wrapper">
+                                <span id="hero-quote-typed"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="radio-group">
-              <input type="radio" id="catolico_nao" name="catolico" value="nao">
-              <label for="catolico_nao">Não, mas estou aberto a conhecer.</label>
+        </section>
+
+        <section id="paroquia" class="section-padded">
+            <div class="container">
+                <div class="dual-card glassmorphism">
+                    <div>
+                        <h2 class="section-title">Nossa Comunidade</h2>
+                        <p>Somos da Paróquia de Santa Ana, em Campo do Coelho, Nova Friburgo. Uma comunidade ativa que acolhe famílias e jovens, buscando levar a fé para a vivência cotidiana.</p>
+                    </div>
+                    <div>
+                        <h2 class="section-title">O Grupo Jovem</h2>
+                        <p>O Grupo Jovem da Paróquia de Santa Ana reúne a juventude para momentos formativos, retiros e atuações na comunidade, com foco em formação humana e espiritual.</p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="form-group">
-            <label>Poderá ficar durante todo o evento (13h-20h)?</label>
-            <div class="radio-group">
-              <input type="radio" id="dia_todo_sim" name="dia_todo" value="sim">
-              <label for="dia_todo_sim">Sim</label>
-              <input type="radio" id="dia_todo_nao" name="dia_todo" value="nao">
-              <label for="dia_todo_nao">Não</label>
+        <section id="localizacao" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Local do Encontro</h2>
+                <div class="location-card glassmorphism">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.336102663969!2d-42.4542763888805!3d-22.22744247963381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978c10522530c5%3A0xe543503b863d3dce!2sCapela%20de%20S%C3%A3o%20Jos%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1695133221974!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="address-container">
+                        <h3>Capela de São José</h3>
+                        <p>Estr. do Cardinot, 4202-4414 - Cardinot, Nova Friburgo - RJ, 28630-010</p>
+                        <a href="https://maps.app.goo.gl/kXh6E4i9f1qS2YJUA" target="_blank" class="map-link">Ver no Google Maps</a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+        
+        <section id="inscricao" class="section-padded">
+            <div class="container">
+                <div class="form-card-wrapper glassmorphism">
+                    <h2 class="section-title">Garanta sua Vaga</h2>
+                    <p>Preencha os dados abaixo. É rapidinho!</p>
+                    <form action="#" method="POST" class="form-grid">
+                        <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+                        <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
+                        <input type="text" id="capela" name="capela" placeholder="Capela que participa (opcional)">
 
-          <div class="form-group">
-            <label>Como você virá para o encontrão?</label>
-            <div class="radio-group">
-              <input type="radio" id="transporte_sim" name="transporte" value="proprio">
-              <label for="transporte_sim">Tenho transporte próprio</label>
-              <input type="radio" id="transporte_nao" name="transporte" value="carona">
-              <label for="transporte_nao">Preciso de ajuda com carona</label>
+                        <div class="form-group radio-block">
+                            <label>Você é católico?</label>
+                            <div class="radio-row">
+                                <input type="radio" id="catolico_sim" name="catolico" value="sim"><label for="catolico_sim">Sim, e quero me aprofundar!</label>
+                            </div>
+                            <div class="radio-row">
+                                <input type="radio" id="catolico_nao" name="catolico" value="nao"><label for="catolico_nao">Não, mas quero conhecer.</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group radio-block">
+                            <label>Poderá ficar durante todo o evento?</label>
+                            <div class="radio-row">
+                                <input type="radio" id="dia_todo_sim" name="dia_todo" value="sim"><label for="dia_todo_sim">Sim</label>
+                            </div>
+                            <div class="radio-row">
+                                <input type="radio" id="dia_todo_nao" name="dia_todo" value="nao"><label for="dia_todo_nao">Não</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group radio-block">
+                            <label>Precisa de ajuda com transporte?</label>
+                            <div class="radio-row">
+                                <input type="radio" id="transporte_proprio" name="transporte" value="proprio"><label for="transporte_proprio">Não, tenho transporte</label>
+                            </div>
+                            <div class="radio-row">
+                                <input type="radio" id="transporte_carona" name="transporte" value="carona"><label for="transporte_carona">Sim, preciso de carona</label>
+                            </div>
+                        </div>
+
+                        <div id="guardian-fields" class="hidden">
+                            <p class="guardian-notice">Como você é menor de idade, por favor, preencha os dados de um responsável:</p>
+                            <div class="form-group">
+                                <input type="text" id="responsavel" name="responsavel" placeholder="Nome do responsável">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="tel_responsavel" name="tel_responsavel" placeholder="Telefone do responsável">
+                            </div>
+                        </div>
+                        <button type="submit" class="cta-button">CONFIRMAR MINHA PRESENÇA</button>
+                    </form>
+                </div>
             </div>
-          </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="container">&copy; 2025 Juventude Santa. Todos os direitos reservados.</p>
+    </footer>
 
-          <div class="form-group">
-            <label for="responsavel">Nome de um responsável:</label>
-            <input type="text" id="responsavel" name="responsavel" required>
-          </div>
-          <div class="form-group">
-            <label for="tel_responsavel">Telefone do responsável:</label>
-            <input type="tel" id="tel_responsavel" name="tel_responsavel" required>
-          </div>
-
-          <button type="submit" class="cta-button">CONFIRMAR MINHA PRESENÇA</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Juventude Santa. Todos os direitos reservados.</p>
-  </footer>
-
-  <!-- JS externo -->
-  <script src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
